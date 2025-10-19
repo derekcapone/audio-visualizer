@@ -8,8 +8,10 @@ class MainApplication(QMainWindow, Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
 
-        self.tab1_widget = AudioVisualizerTab()
-        self.main_tab_widget.addTab(self.tab1_widget, "Audio Visualizer")
+
+
+        self.audio_visualizer_widget = AudioVisualizerTab()
+        self.main_tab_widget.addTab(self.audio_visualizer_widget, "Audio Visualizer")
 
 # Run the application
 if __name__ == "__main__":
